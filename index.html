@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>2WIN Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="base.css"
+    />
+    <link
+      rel="stylesheet"
+      href="adaptive.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-left">
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <button class="btn-create">+ Create</button>
+        <div class="logo">2WIN</div>
+      </div>
+      <nav class="top-nav">
+        <a
+          class="top-nav-link"
+          href="#"
+        >
+          Home
+        </a>
+        <a
+          class="top-nav-link"
+          href="#"
+        >
+          Materials for Quiz
+        </a>
+        <a
+          class="top-nav-link"
+          href="#"
+        >
+          Feedback
+        </a>
+      </nav>
+      <div class="profile">
+        <img
+          src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80"
+          alt="User"
+        />
+      </div>
+      <button
+        class="nav-toggle"
+        id="navToggle"
+      >
+        <i class="fas fa-ellipsis-h"></i>
+      </button>
+    </header>
+
+    <div class="layout">
+      <!-- SIDEBAR -->
+      <aside
+        class="sidebar"
+        id="sidebar"
+      >
+        <ul class="menu">
+          <li>
+            <i class="fas fa-list-check"></i>
+            My quizzes
+          </li>
+          <li>
+            <i class="fas fa-check-circle"></i>
+            Completed quizzes
+          </li>
+          <li class="active">
+            <i class="fas fa-exclamation-circle"></i>
+            Unmoderated quizzes
+          </li>
+          <li>
+            <i class="fas fa-folder-open"></i>
+            Manage quiz folders
+          </li>
+          <li>
+            <i class="fas fa-trash-alt"></i>
+            Trash
+          </li>
+          <li>
+            <i class="fas fa-user"></i>
+            My profile
+          </li>
+        </ul>
+
+        <div class="sidebar-bottom">
+          <div class="user-card">
+            <img
+              src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80"
+              alt="User"
+            />
+            <div>
+              <strong>User Name</strong>
+              <br />
+              <small>Moderator</small>
+            </div>
+          </div>
+          <p>
+            Author rating:
+            <b>1190 points</b>
+          </p>
+          <p>
+            User rating:
+            <b>353 points, 31.87%</b>
+          </p>
+          <button class="btn-exit">Exit</button>
+        </div>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <main class="main">
+        <h2>Unmoderated quizzes</h2>
+
+        <!-- Table View -->
+        <div class="table-view">
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Quiz name</th>
+                  <th>Results and rating</th>
+                  <th>Created</th>
+                  <th>Category</th>
+                  <th>Moderation status</th>
+                  <th>Moderation date</th>
+                  <th>Last moderation by</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- 10 строк данных -->
+                <tr>
+                  <td class="quiz-title">
+                    <img
+                      src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80"
+                      alt="quiz"
+                    />
+                    <span>History Quiz - Europe</span>
+                  </td>
+                  <td><span class="stars">⭐⭐⭐⭐⭐</span></td>
+                  <td>31.01.2025</td>
+                  <td>History</td>
+                  <td><span class="badge progress">32%</span></td>
+                  <td>
+                    <div class="moderator">
+                      <img
+                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80"
+                        alt="mod"
+                      />
+                      <span>Moderator Name</span>
+                    </div>
+                  </td>
+                  <td>
+                    <button class="btn-comment">Comments</button>
+                    <button class="btn-small">Start</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="quiz-title">
+                    <img
+                      src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80"
+                      alt="quiz"
+                    />
+                    <span>Culture Quiz</span>
+                  </td>
+                  <td><span class="stars">⭐⭐⭐⭐</span></td>
+                  <td>30.01.2025</td>
+                  <td>Culture</td>
+                  <td><span class="badge waiting">Pending</span></td>
+                  <td>
+                    <div class="moderator">
+                      <span>Not assigned</span>
+                    </div>
+                  </td>
+                  <td>
+                    <button class="btn-comment">Comments</button>
+                    <button class="btn-small">Start</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="quiz-title">
+                    <img
+                      src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80"
+                      alt="quiz"
+                    />
+                    <span>Science Quiz</span>
+                  </td>
+                  <td><span class="stars">⭐⭐⭐⭐⭐</span></td>
+                  <td>29.01.2025</td>
+                  <td>Science</td>
+                  <td><span class="badge progress">60%</span></td>
+                  <td>
+                    <div class="moderator">
+                      <img
+                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80"
+                        alt="mod"
+                      />
+                      <span>Sarah Johnson</span>
+                    </div>
+                  </td>
+                  <td>
+                    <button class="btn-comment">Comments</button>
+                    <button class="btn-small">Continue</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="quiz-title">
+                    <img
+                      src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80"
+                      alt="quiz"
+                    />
+                    <span>Geography Quiz</span>
+                  </td>
+                  <td><span class="stars">⭐⭐⭐</span></td>
+                  <td>28.01.2025</td>
+                  <td>Geography</td>
+                  <td><span class="badge waiting">Pending</span></td>
+                  <td>
+                    <div class="moderator">
+                      <span>Not assigned</span>
+                    </div>
+                  </td>
+                  <td>
+                    <button class="btn-comment">Comments</button>
+                    <button class="btn-small">Start</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="quiz-title">
+                    <img
+                      src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80"
+                      alt="quiz"
+                    />
+                    <span>Literature Quiz</span>
+                  </td>
+                  <td><span class="stars">⭐⭐⭐⭐</span></td>
+                  <td>27.01.2025</td>
+                  <td>Literature</td>
+                  <td><span class="badge progress">45%</span></td>
+                  <td>
+                    <div class="moderator">
+                      <img
+                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80"
+                        alt="mod"
+                      />
+                      <span>Mike Wilson</span>
+                    </div>
+                  </td>
+                  <td>
+                    <button class="btn-comment">Comments</button>
+                    <button class="btn-small">Continue</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="quiz-title">
+                    <img
+                      src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80"
+                      alt="quiz"
+                    />
+                    <span>Math Quiz</span>
+                  </td>
+                  <td><span class="stars">⭐⭐⭐⭐⭐</span></td>
+                  <td>26.01.2025</td>
+                  <td>Mathematics</td>
+                  <td><span class="badge waiting">Pending</span></td>
+                  <td>
+                    <div class="moderator">
+                      <span>Not assigned</span>
+                    </div>
+                  </td>
+                  <td>
+                    <button class="btn-comment">Comments</button>
+                    <button class="btn-small">Start</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="quiz-title">
+                    <img
+                      src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80"
+                      alt="quiz"
+                    />
+                    <span>Art Quiz</span>
+                  </td>
+                  <td><span class="stars">⭐⭐⭐</span></td>
+                  <td>25.01.2025</td>
+                  <td>Art</td>
+                  <td><span class="badge progress">75%</span></td>
+                  <td>
+                    <div class="moderator">
+                      <img
+                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80"
+                        alt="mod"
+                      />
+                      <span>Emma Davis</span>
+                    </div>
+                  </td>
+                  <td>
+                    <button class="btn-comment">Comments</button>
+                    <button class="btn-small">Continue</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="quiz-title">
+                    <img
+                      src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80"
+                      alt="quiz"
+                    />
+                    <span>Sports Quiz</span>
+                  </td>
+                  <td><span class="stars">⭐⭐⭐⭐</span></td>
+                  <td>24.01.2025</td>
+                  <td>Sports</td>
+                  <td><span class="badge waiting">Pending</span></td>
+                  <td>
+                    <div class="moderator">
+                      <span>Not assigned</span>
+                    </div>
+                  </td>
+                  <td>
+                    <button class="btn-comment">Comments</button>
+                    <button class="btn-small">Start</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="quiz-title">
+                    <img
+                      src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80"
+                      alt="quiz"
+                    />
+                    <span>Music Quiz</span>
+                  </td>
+                  <td><span class="stars">⭐⭐⭐⭐⭐</span></td>
+                  <td>23.01.2025</td>
+                  <td>Music</td>
+                  <td><span class="badge progress">20%</span></td>
+                  <td>
+                    <div class="moderator">
+                      <img
+                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80"
+                        alt="mod"
+                      />
+                      <span>David Brown</span>
+                    </div>
+                  </td>
+                  <td>
+                    <button class="btn-comment">Comments</button>
+                    <button class="btn-small">Continue</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="quiz-title">
+                    <img
+                      src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80"
+                      alt="quiz"
+                    />
+                    <span>Technology Quiz</span>
+                  </td>
+                  <td><span class="stars">⭐⭐⭐⭐</span></td>
+                  <td>22.01.2025</td>
+                  <td>Technology</td>
+                  <td><span class="badge waiting">Pending</span></td>
+                  <td>
+                    <div class="moderator">
+                      <span>Not assigned</span>
+                    </div>
+                  </td>
+                  <td>
+                    <button class="btn-comment">Comments</button>
+                    <button class="btn-small">Start</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="table-footer">
+              <div class="items-per-page">
+                <label for="items">Items for page</label>
+                <select id="items">
+                  <option>10</option>
+                  <option>25</option>
+                  <option>50</option>
+                </select>
+              </div>
+              <div class="pagination">
+                <button>&laquo;</button>
+                <button class="active">1</button>
+                <button>2</button>
+                <button>3</button>
+                <span>...</span>
+                <button>25</button>
+                <button>&raquo;</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      const menuToggle = document.getElementById('menuToggle');
+      const sidebar = document.getElementById('sidebar');
+      const navToggle = document.getElementById('navToggle');
+      const topNav = document.querySelector('.top-nav');
+
+      // Toggle sidebar
+      menuToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        sidebar.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+
+        // Закрываем top-nav если он открыт
+        if (topNav.classList.contains('active')) {
+          topNav.classList.remove('active');
+        }
+      });
+
+      // Toggle top navigation
+      navToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        topNav.classList.toggle('active');
+      });
+
+      // Close sidebar when clicking outside
+      document.addEventListener('click', (event) => {
+        const isClickInsideSidebar = sidebar.contains(event.target);
+        const isClickOnMenuToggle = menuToggle.contains(event.target);
+
+        if (
+          !isClickInsideSidebar &&
+          !isClickOnMenuToggle &&
+          sidebar.classList.contains('active')
+        ) {
+          sidebar.classList.remove('active');
+          menuToggle.classList.remove('active');
+        }
+
+        // Закрываем top-nav при клике вне его
+        if (
+          topNav.classList.contains('active') &&
+          !topNav.contains(event.target) &&
+          !event.target.closest('.nav-toggle')
+        ) {
+          topNav.classList.remove('active');
+        }
+      });
+
+      // Адаптивное отображение верхнего меню
+      function checkWindowSize() {
+        if (window.innerWidth <= 768) {
+          // На мобильных устройствах скрываем top-nav по умолчанию
+          topNav.classList.remove('active');
+          navToggle.style.display = 'block';
+        } else {
+          // На больших экранах всегда показываем top-nav
+          topNav.classList.add('active');
+          navToggle.style.display = 'none';
+        }
+      }
+
+      // Проверяем размер окна при загрузке и изменении размера
+      window.addEventListener('load', checkWindowSize);
+      window.addEventListener('resize', checkWindowSize);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,245 @@
+/* ========== ADAPTIVE STYLES ========== */
+
+/* Large screens (min-width: 1400px) */
+@media (min-width: 1400px) {
+  .main {
+    padding: 25px 20px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  th,
+  td {
+    padding: 14px 12px;
+  }
+}
+
+/* Tablets (max-width: 1200px) */
+@media (max-width: 1200px) {
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tablets (max-width: 992px) */
+@media (max-width: 992px) {
+  .header {
+    padding: 10px 15px;
+  }
+
+  .top-nav {
+    gap: 20px;
+    margin-left: 50px;
+  }
+
+  .top-nav a {
+    font-size: 16px;
+  }
+
+  .sidebar {
+    width: 220px;
+    padding: 20px 12px;
+  }
+
+  .menu li {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  .main {
+    padding: 15px;
+  }
+
+  .main h2 {
+    font-size: 16px;
+  }
+
+  /* Table adjustments */
+  table {
+    font-size: 12px;
+  }
+
+  th,
+  td {
+    padding: 10px 8px;
+  }
+
+  .quiz-title img {
+    width: 40px;
+    height: 28px;
+  }
+
+  .moderator img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .btn-small,
+  .btn-comment {
+    padding: 6px 8px;
+    font-size: 10px;
+    width: 65px;
+  }
+}
+
+/* Small tablets and large phones (max-width: 768px) */
+@media (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+    gap: 15px;
+    height: auto;
+    min-height: 50px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .top-nav {
+    display: none;
+    width: 100%;
+    order: 3;
+    margin: 10px 0 0;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .top-nav.active {
+    display: flex;
+  }
+
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: fixed;
+    left: -280px;
+    top: 0;
+    height: 100vh;
+    z-index: 1000;
+    padding-top: 60px;
+    width: 240px;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+
+  .main {
+    margin-left: 0;
+    padding: 12px;
+  }
+
+  /* Table responsive */
+  .table-wrapper {
+    overflow-x: auto;
+    border-radius: 8px;
+  }
+
+  table {
+    min-width: 700px;
+  }
+
+  .table-footer {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+    padding: 10px 12px;
+  }
+
+  .pagination {
+    align-self: flex-end;
+    flex-wrap: wrap;
+  }
+}
+
+/* Mobile phones (max-width: 576px) */
+@media (max-width: 576px) {
+  .header-left {
+    gap: 8px;
+  }
+
+  .btn-create {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .profile img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .main {
+    padding: 10px;
+  }
+
+  .main h2 {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .items-per-page {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .items-per-page select {
+    width: 100%;
+  }
+
+  .pagination {
+    align-self: stretch;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  .pagination button {
+    padding: 5px 8px;
+    min-width: 32px;
+    height: 32px;
+    font-size: 11px;
+  }
+}
+
+/* Small mobile phones (max-width: 400px) */
+@media (max-width: 400px) {
+  .header {
+    padding: 8px 10px;
+  }
+
+  .btn-create {
+    padding: 5px 8px;
+    font-size: 11px;
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+
+  .main {
+    padding: 8px;
+  }
+
+  .main h2 {
+    font-size: 15px;
+  }
+
+  .table-footer {
+    padding: 8px 10px;
+  }
+
+  .pagination button {
+    padding: 4px 6px;
+    min-width: 30px;
+    height: 30px;
+    font-size: 10px;
+  }
+}
